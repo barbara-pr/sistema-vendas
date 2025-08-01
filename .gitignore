@@ -1,0 +1,6 @@
+Sistema de Vendas.docx
+*.docx
+*.pdf
+node_modules/
+vendas.db
+.env

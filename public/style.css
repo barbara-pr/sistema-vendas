@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(240, 239, 239);
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header > h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 4em;
+    font-weight: 600;
+    color: rgb(63, 109, 69);
+    text-align: center;
+}
+
+header > h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: rgb(36, 94, 44);
+    text-align: center;
+}
+
+hr {
+    height: 1px;
+    background-color: rgb(4, 34, 4);
+    width: 100%;
+}
+
+.segmento-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.segmento {
+    padding: 10px 20px;
+    border: 2px solid #2e7d32; 
+    background-color: white;
+    color: #2e7d32;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.segmento:hover {
+    background-color: #266b2a;
+    color: white;
+}
+  
+#tecidos-lista {
+    margin-top: 20px;
+    padding: 10px;
+    border-left: 4px solid #2e7d32;
+    background-color: #f1f8f2;
+    border-radius: 6px;
+    min-height: 30px;
+    display: none;
+}
+
+.um-campo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.dois-campos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+input{
+    margin-right: 1em;
+    padding: 9px;
+    border: 0.3px solid #2e7d32;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+label {
+    font-weight: bold;
+    color: rgb(39, 77, 39);
+    margin-bottom: 5px;
+}
+
+.botao-venda {
+    background-color: rgb(86, 110, 86);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px auto;
+    transition: background-color 0.3s ease;
+}
+
+.botao-venda:hover {
+    background-color: rgb(31, 44, 31);
+}
+
+.menu {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    z-index: 10;
+  }
+  
+.menu .item {
+    padding: 10px;
+    cursor: pointer;
+}
+  
+.menu .item:hover {
+    background-color: #d5ffd5;
+}
+  
+.escondido {
+    display: none;
+}
+
+.campo-exibicao {
+    display: inline-block;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    min-width: 200px;
+}  
+
+@media (max-width: 600px) {
+    header > h1 {
+        font-size: 2.5em;
+    }
+
+    .botao-venda {
+        width: 100%;
+    }
+
+    .campo-exibicao {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .segmento-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dois-campos {
+        flex-direction: column;
+    }
+
+    input {
+        font-size: 14px;
+    }
+}
+  

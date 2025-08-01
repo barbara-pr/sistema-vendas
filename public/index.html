@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Sistema de Vendas</title>
+</head>
+<body>
+    <header class="container" id="home">
+        <h1>Super Malhas</h1>
+        <h3>SISTEMA DE VENDAS</h3>
+        <hr>
+        <br>
+    </header>
+
+    <form class="container" id="form-venda">
+        <div class="segmento-container">
+            <button class="segmento" data-segmento="Fitness">Fitness</button>
+            <button class="segmento" data-segmento="Praia">Praia</button>
+            <button class="segmento" data-segmento="Lingerie">Lingerie</button>
+            <button class="segmento" data-segmento="Festa">Festa</button>
+            <button class="segmento" data-segmento="Casual">Casual</button>
+        </div>
+
+        <!-- Menu que será preenchido dinamicamente -->
+        <div id="menuTecido" class="menu escondido"></div>
+
+        <div class="um-campo">
+            <label>Tecido vendido:</label>
+            <span id="tecidoSelecionadoVisivel" class="campo-exibicao">Nenhum tecido selecionado</span>
+            <input type="hidden" id="tecidoSelecionado">
+        </div>
+          
+        <div id="tecidos-lista" class="lista-oculta"></div>
+
+        <div class="um-campo">
+            <label>Quantidade vendida:</label>
+            <input type="text" id="quantidade" inputmode="decimal" placeholder="0,00m" required>
+        </div>
+
+        <div class="dois-campos">
+            <div class="campo">
+                <label>Preço por metro:</label>
+                <input type="text" id="preco" inputmode="decimal" placeholder="R$0,00" required>
+            </div>
+            
+            <div class="campo">
+                <label>Data:</label>
+                <input type="date" id="data" placeholder="__/__/____" required>
+            </div>
+        </div>
+
+        <p id="resultado"></p>
+
+        <button type="submit" class="botao-venda">Registrar Venda</button>
+
+        <br>
+        <hr>
+      </form>
+      
+      <script src="script.js"></script>
+      
+</body>
+</html>
